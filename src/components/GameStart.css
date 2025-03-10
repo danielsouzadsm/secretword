@@ -1,0 +1,43 @@
+.game h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.points span{
+    font-weight: bold;
+}
+.tip span{
+    color: gold;
+    text-transform: uppercase;
+}
+.wordContainer {
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 15px solid gold;
+    display: flex;
+}
+.letters, .blankSquare{
+    font-size: 60px;
+    line-height: 1.5;
+    border: 3px solid black;
+    color: black;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.latterContainer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latterContainer input{
+    width: 45px;
+    height: 45px;
+    font-size: 1.7em;
+    text-align: center;
+    margin-right: 1em;
+    font-weight: 600;
+}
