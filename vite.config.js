@@ -7,5 +7,6 @@ export default defineConfig({
   base:'/secretword',
   server:{
     open:true,
+    port:3000,
   }
 })
