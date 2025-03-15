@@ -19,7 +19,7 @@ export const wordList = {
     animal: ['Leão', 'Elefante', 'Girafa', 'Tigre', 'Cachorro', 'Gato', 'Pássaro', 'Zebra'],
     cor: ['Vermelho', 'Azul', 'Verde', 'Amarelo', 'Preto', 'Branco', 'Rosa', 'Cinza'],
     estado: [ "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Goiás", "Maranhão", 
-        "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rondônia", "Roraima", "Sergipe", "Tocantins"],
+        "Minas"-"Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rondônia", "Roraima", "Sergipe", "Tocantins"],
     esporte: ['Futebol', 'Basquete', 'Vôlei', 'Natação', 'Atletismo', 'Tênis', 'Futsal', 'Rugby'],
     alimento: ['Pizza', 'Hambúrguer', 'Sushi', 'Churrasco', 'Sorvete', 'Biscoito', 'Chocolate', 'Bengala'],
     instrumento: ['Violão', 'Piano', 'Bateria', 'Guitarra', 'Flauta', 'Saxofone', 'Teclado', 'Trompete'],
