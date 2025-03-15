@@ -24,17 +24,17 @@ function App() {
   const [chances, setChances] = useState(5);
   const [score, setScore] = useState(0);
 
-  const pickWordAndCategory = useCallback(() => {
+  const pickWordAndCategory = () => {
     const categories = Object.keys(words);
     const category = categories[Math.floor(Math.random() * categories.length)];
 
     const word =
       words[category][Math.floor(Math.random() * words[category].length)];
     return { word, category };
-  },[words]);
+  };
 
-  const comecar = useCallback(() => {
-    limparStages()
+  const comecar = () => {
+    limparStages();
     const { word, category } = pickWordAndCategory();
     let wordLetters = word.split("");
 
@@ -45,7 +45,7 @@ function App() {
     setLetters(wordLetters);
 
     setGameStage(stages[1].name);
-  },[pickWordAndCategory]);
+  };
 
   const verificarLetra = letter => {
     const normalizarLetra = letter.toLowerCase();
