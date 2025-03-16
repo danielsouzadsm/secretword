@@ -1,22 +1,27 @@
-.game h1{
+.game h1 {
     font-size: 2.5em;
     text-transform: uppercase;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.points span{
+
+.points span {
     font-weight: bold;
 }
-.tip span{
+
+.tip span {
     color: gold;
     text-transform: uppercase;
 }
+
 .wordContainer {
-    margin: 1.5em;
+    margin: 1.2em;
     padding: 1.5em;
     border: 15px solid gold;
     display: flex;
 }
-.letters, .blankSquare{
+
+.letters,
+.blankSquare {
     font-size: 60px;
     line-height: 1.5;
     border: 3px solid black;
@@ -28,16 +33,67 @@
     font-weight: bold;
 }
 
-.latterContainer form{
+.latterContainer form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.latterContainer input{
+
+.latterContainer input {
     width: 45px;
     height: 45px;
-    font-size: 1.7em;
+    font-size: 2em;
     text-align: center;
     margin-right: 1em;
     font-weight: 600;
+}
+
+@media(max-width: 720px) {
+    .game h1 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .wordContainer {
+        border: 5px solid gold;
+        width: 30%;
+        margin: 0 auto;
+        padding: 1.0em;
+    }
+
+    .letters,
+    .blankSquare {
+        font-size: 24px;
+        line-height: 1.7;
+        border: 3px solid black;
+        color: black;
+        width: 90px;
+        height: 35px;
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .latterContainer input {
+        width: 20px;
+        height: 20px;
+        font-size: 1.5em;
+        text-align: center;
+        margin-right: 1em;
+        font-weight: 600;
+    }
+    button{
+        color: #ffffff;
+        background-color: #1646a0;
+        border: 1px solid #ffffff;
+        padding: 0 25px;
+        height: 25px;
+        transition: .4s;
+        border-radius: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.6em;
+    }
+    
 }

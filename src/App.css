@@ -1,7 +1,8 @@
-.app{
+.app {
   color: aliceblue;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
+

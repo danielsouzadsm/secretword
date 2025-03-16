@@ -14,7 +14,7 @@ const GameStart = ({
 
   const [letter, setLetter] = useState('');
   const letterInputRef = useRef(null)
- 
+  const letras = letters.length
   const handleSubmit = e => {
     e.preventDefault();
     verificarLetra(letter);
@@ -22,8 +22,7 @@ const GameStart = ({
     letterInputRef.current.focus();
 
   }
-  
-
+    
   return (
     <>
       <div className="game">
@@ -32,9 +31,11 @@ const GameStart = ({
         </p>
         <h1>adivinhe a palavra:</h1>
         <h3 className="tip">
-          Dica da palavra: <span>{pickedCategory}</span>
+          Dica: <span>{pickedCategory}</span>
         </h3>
-        <p>Você ainda tem {chances} tentativas</p>
+        <p>A palavra tem {letras} letras</p>
+        <p>Você ainda tem {chances} tentativas </p>
+
         <div className="wordContainer">
           {letters.map( (letra, i) =>
             letrasCertas.includes(letra) ? (
